@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Squad{
+public class Squad {
   private int mSize;
   private String mName;
   private String mCause;
@@ -9,42 +9,49 @@ public class Squad{
   private int mId;
   private List<Hero> mHeros;
 
-
-  public Squad(String name,int size, String cause){
-     mSize = size;
-     mName = name;
-     mCause = cause;
-     instances.add(this);
-     mId = instances.size();
-     mHeros = new ArrayList<Hero>();
+  public Squad(String name, int size, String cause) {
+    mSize = size;
+    mName = name;
+    mCause = cause;
+    instances.add(this);
+    mId = instances.size();
+    mHeros = new ArrayList<Hero>();
   }
 
-  public int getSize(){
+  public int getSize() {
     return mSize;
   }
-  public String getName(){
+
+  public String getName() {
     return mName;
   }
-  public String getCause(){
+
+  public String getCause() {
     return mCause;
   }
-  public int getId(){
+
+  public int getId() {
     return mId;
   }
-  public static List<Squad> all(){
+
+  public static List<Squad> all() {
     return instances;
   }
-  public static void clear(){
+
+  public static void clear() {
     instances.clear();
   }
-  public void addHero(Hero hero){
+
+  public void addHero(Hero hero) {
     mHeros.add(hero);
   }
+
   public List<Hero> getHeros() {
-   return mHeros;
- }
- public static Squad find(int id) {
-   return instances.get(id - 1);
+    return mHeros;
+  }
+
+  public static Squad find(int id) {
+    return instances.get(id - 1);
   }
 
 }
