@@ -9,6 +9,10 @@ This is an app created using Apache Spark that enables users to assign a `Hero` 
 * Run the tests `gradle test`
 * Launch the app `gradle run`. The app will open on port 4567 on your browser: `localhost:4567`
 
+## Deployment
+
+This project is hosted on Heroku https://whispering-escarpment-62119.herokuapp.com
+
 ## Author 
 
 [MIT](LICENSE) © Licio Lentimo
