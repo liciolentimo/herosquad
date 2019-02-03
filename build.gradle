@@ -18,3 +18,10 @@ dependencies {
 
 defaultTasks = ['clean']
 task stage(dependsOn: ['clean', 'installApp'])
+
+plugins {
+    id 'net.saliman.cobertura' version '2.3.1'
+    id 'com.github.kt3k.coveralls' version '2.8.2'
+}
+
+cobertura.coverageFormats = ['html', 'xml']
