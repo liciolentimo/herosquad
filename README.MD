@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/liciolentimo/herosquad.svg?branch=master)](https://travis-ci.org/liciolentimo/herosquad)
+
 ## Hero-Squad
 
 This is an app created using Apache Spark that enables users to assign a `Hero` to a `Squad`. It uses Spark's RESTful routing to navigate through the app's pages.
