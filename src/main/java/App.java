@@ -43,7 +43,7 @@ public class App {
             String name = request.queryParams("squad-name");
             int size = Integer.parseInt(request.queryParams("squad-size"));
             String cause = request.queryParams("squad-cause");
-            Squad newSquad = new Squad(size, name, cause);
+            Squad newSquad = new Squad(name,size, cause);
             model.put("template", "templates/success.vtl");
 
             return new ModelAndView(model, layout);

@@ -10,7 +10,7 @@ public class Squad{
   private List<Hero> mHeros;
 
 
-  public Squad(int size, String name, String cause){
+  public Squad(String name,int size, String cause){
      mSize = size;
      mName = name;
      mCause = cause;

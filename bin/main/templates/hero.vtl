@@ -1,8 +1,8 @@
-#if ($heroes.size()> 0)
+#if ($heros.size()> 0)
     <ul>
-        #foreach ($hero in $heroes)
+        #foreach ($hero in $heros)
             <li>
-                <a href="/heroes/$hero.getId()">
+                <a href="/heros/$hero.getId()">
                     <div class="row text-squad-rw">
                         <div class="col-md-3">
                             $hero.getName()
@@ -29,5 +29,5 @@
 </table>
 
 <div class="btn btn-lg">
-<a href="/squads/new">New Squad!</a>
+<a href="/squads/new">New Squad</a>
 </div>
