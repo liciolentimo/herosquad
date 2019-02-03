@@ -1,0 +1,20 @@
+<h1>All Squads</h1>
+<ul>
+  #foreach ($squad in $squads)
+  <li><a href="/squads/$squad.getId()">
+                   <div class="row text-squad-rw">
+                       <div class="col-md-3">
+                           $squad.getName()
+                       </div>
+                       <div class="col-md-3">
+                          $squad.getSize()
+                       </div>
+                       <div class="col-md-6">
+                          $squad.getCause()
+                       </div>
+                   </div>
+               </a></li>
+               <hr noshade>
+             #end
+</ul>
+<a href="/squads/new">Add New Squad</a>
